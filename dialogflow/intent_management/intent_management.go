@@ -109,6 +109,7 @@ func main() {
 	}
 }
 
+// [START dialogflow_list_intent]
 func ListIntents(projectID string) ([]*dialogflowpb.Intent, error) {
 	ctx := context.Background()
 
@@ -136,6 +137,7 @@ func ListIntents(projectID string) ([]*dialogflowpb.Intent, error) {
 
 	return intents, nil
 }
+// [END dialogflow_list_intent]
 
 // [START dialogflow_create_intent]
 func CreateIntent(projectID, displayName string, trainingPhraseParts, messageTexts []string) error {
